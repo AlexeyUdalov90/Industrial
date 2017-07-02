@@ -1,0 +1,70 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+  background-color: #212c44;
+}
+
+.header {
+  margin-top: 60px;
+  margin-bottom: 55px;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  margin-bottom: 40px;
+}
+
+.first-block__item {
+  position: relative;
+  flex-basis: 100%;
+  min-height: 690px;
+  background-image: url(../img/product.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.stiker {
+/*  width: 9.5%;*/
+  max-width: 110px;
+  max-height: 110px;
+  
+  position: absolute;
+  top: 37px;
+  right: 37px;
+  
+  background-image: url(../img/stiker.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.stiker p {
+  padding: 0;
+  margin: 0;
+  
+  font-size: 16px;
+  line-height: 110px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  
+  text-align: center;
+  vertical-align: middle;
+  
+  transform: rotate(-15deg);
+}
+
+.stiker span {
+  color: #2bde73;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
