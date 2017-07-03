@@ -1,14 +1,33 @@
 body {
-  width: 100%;
+  max-width: 1360px;
   padding: 0;
-  margin: 0;
+  
+  font-family: HKGrotesk;
+  color: #fff;
   
   background-color: #212c44;
 }
 
+body * {
+  box-sizing: border-box;
+}
+
 .header {
   margin-top: 60px;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
+}
+
+h1, h2 {
+  font-family: 'League Spartan', Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.block h1 {
+  font-size: 80px;
+  line-height: 96px;
+  margin-bottom: 20px;
 }
 
 .block {
@@ -24,15 +43,28 @@ body {
   position: relative;
   flex-basis: 100%;
   min-height: 690px;
+  
+  padding: 50px 60px;
+  
   background-image: url(../img/product.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
+
+.item__large-content {
+  width: 36%;
+}
+
+.item__large-content {
+  font-size: 32px;
+  line-height: 42px;
+}
+
 .stiker {
 /*  width: 9.5%;*/
-  max-width: 110px;
-  max-height: 110px;
+  width: 110px;
+  height: 110px;
   
   position: absolute;
   top: 37px;
@@ -48,7 +80,8 @@ body {
   padding: 0;
   margin: 0;
   
-  font-size: 16px;
+  font-family: Baloo;
+  font-size: 15px;
   line-height: 110px;
   font-weight: bold;
   color: #fff;
@@ -62,6 +95,80 @@ body {
 
 .stiker span {
   color: #2bde73;
+}
+
+.second-block__item {
+  width: 48%;
+  padding: 30px;
+}
+
+.item__medium-content {
+  width: 450px;
+}
+
+.item__medium-content h2 {
+  font-size: 48px;
+  line-height: 42px;
+  margin-bottom: 25px;
+}
+
+.item__medium-content {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.second-block__item:first-child {
+/*  text-align: right;*/
+  background: #5eb7a5;
+}
+
+.second-block__item:last-child {
+  background: #757dc9
+}
+
+.third-block__item {
+  width: 31%;
+  text-align: center;
+}
+
+.third-block__item:nth-child(1) {
+  background: #eb7c61;
+}
+
+.third-block__item:nth-child(2) {
+  background: #537582;
+}
+
+.third-block__item:nth-child(3) {
+  background: #81cada;
+}
+
+.item__small-content {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.item__small-content h2 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.subscribe-block {
+  width: 100%;
+}
+
+.subscribe-block__item {
+  width: 72%;
+  margin: 0 auto;
+  
+  font-size: 18px;
+  line-height: 24px;
+  color: #93a3ab;
+  text-align: center;
+}
+
+.subscribe-block__item .big-text {
+  font-size: 36px;
 }
 
 .container {
