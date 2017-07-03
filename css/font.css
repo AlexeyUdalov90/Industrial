@@ -1,0 +1,12 @@
+@font-face {
+  font-family: HKGrotesk;
+  src: url(../fonts/HKGrotesk-Light.woff2) format('woff2'),
+       url(../fonts/HKGrotesk-Light.woff) format('woff'),
+       url(../fonts/HKGrotesk-Light.tff) format('truetype'),
+       url(../fonts/HKGrotesk-Light.svg) format('svg');
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url(../fonts/LeagueSpartan-Bold.otf) format('opentype');
+}
