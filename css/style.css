@@ -5,6 +5,7 @@ body {
   
   font-family: HKGrotesk, sans-serif;
   color: #fff;
+  line-height: 1.2;
   
   background-color: #212c44;
 }
@@ -16,6 +17,27 @@ body * {
 .header {
   margin-top: 60px;
   margin-bottom: 50px;
+}
+
+.form-search-btn {
+  font-size: 0;
+  width: 35px;
+  height: 35px;
+  background: url(../img/search.svg) no-repeat 50% 50%;
+  border: none;
+  border-bottom: 3px solid #62767f;
+  cursor: pointer;
+}
+
+input[id="query-search"] {
+  width: 170px;
+  height: 35px;
+  font-family: HKGrotesk, sans-serif;
+  font-size: 24px;
+  color: #62767f;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #62767f;
 }
 
 h1, h2 {
@@ -30,8 +52,6 @@ h1, h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  
-  margin-bottom: 40px;
 }
 
 .first-block__item {
@@ -40,6 +60,7 @@ h1, h2 {
   min-height: 690px;
   
   padding: 50px 60px;
+  margin-bottom: 40px;
   
   background-image: url(../img/product.jpg);
   background-repeat: no-repeat;
@@ -49,14 +70,12 @@ h1, h2 {
 
 .first-block__item h1 {
   font-size: 80px;
-  line-height: 96px;
   margin-bottom: 20px;
 }
 
 .item__large-content {
   width: 36%;
   font-size: 32px;
-  line-height: 42px;
 }
 
 .item__large-content p {
@@ -72,6 +91,11 @@ h1, h2 {
   top: 37px;
   right: 37px;
   
+  font-family: Baloo;
+  font-size: 15px;
+  line-height: 110px;
+  font-weight: bold;
+  
   background-image: url(../img/stiker.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -82,16 +106,10 @@ h1, h2 {
   padding: 0;
   margin: 0;
   
-  font-family: Baloo;
-  font-size: 15px;
-  line-height: 110px;
-  font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  
   text-align: center;
   vertical-align: middle;
-  
   transform: rotate(-15deg);
 }
 
@@ -99,10 +117,27 @@ h1, h2 {
   color: #2bde73;
 }
 
+.second-block {
+  font-size: 24px;
+}
+
 .second-block__item {
-  flex-grow: 1;
-  flex-basis: 360px;
+/*  flex-grow: 1;*/
+  flex-basis: 560px;
+  min-height: 560px;
   padding: 30px;
+  margin-bottom: 40px;
+/*  margin-right: 40px;*/
+}
+
+.second-block__item:first-child {
+  direction: rtl;
+  background: #5eb7a5 url(../img/bl_speaker.jpg) no-repeat -290px -40px;
+}
+
+.second-block__item:last-child {
+  background: #757dc9 url(../img/photo_cam.png) no-repeat 130px 280px;
+  margin-right: 0;
 }
 
 .item__medium-content {
@@ -111,80 +146,76 @@ h1, h2 {
 
 .item__medium-content h2 {
   font-size: 48px;
-  line-height: 42px;
   margin-bottom: 25px;
 }
 
 .item__medium-content p{
-  font-size: 24px;
-  line-height: 32px;
   margin-bottom: 60px;
 }
 
-.second-block__item:first-child {
-  direction: rtl;
-  background: #5eb7a5;
-}
-
-.second-block__item:last-child {
-  background: #757dc9
-}
-
 .third-block {
-  margin-bottom: 150px;
+  margin-bottom: 110px;
 }
 
 .third-block__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   flex-basis: 360px;
+  min-height: 440px;
   text-align: center;
-  margin: 0 auto;
-/*  padding: 20px;*/
+/*  margin: 0 auto;*/
+  margin-bottom: 40px;
+  padding: 60px 30px 30px;
 }
 
 .third-block__item:nth-child(1) {
-  background: #eb7c61;
+  background: #eb7c61 url(../img/air_purifier.png) no-repeat -20px 250px;
 }
 
 .third-block__item:nth-child(2) {
-  background: #537582;
+  background: #537582 url(../img/headphones.jpg) no-repeat -325px -155px;
 }
 
 .third-block__item:nth-child(3) {
-  background: #81cada;
+  background: #81cada url(../img/braun_pr.png) no-repeat 28px 245px;
+}
+
+.third-block__item:nth-child(odd) .item__small-content {
+  margin-bottom: auto;
+}
+
+.third-block__item:nth-child(even) .item__small-content {
+  margin-top: auto;
 }
 
 .item__small-content {
-  width: 80%;
-  margin: 0 auto;
   font-size: 16px;
-  line-height: 20px;
 }
 
-.item__small-content * {
+.item__small-content p {
   margin: 0;
-  padding: 0;
 }
 
 .item__small-content h2 {
   font-size: 36px;
-  line-height: 42px;
-  margin-bottom: 35px;
+  margin: 0;
+  margin-bottom: 30px;
   margin-top: 15px;
 }
 
 .subscribe-block {
   width: 100%;
   margin-bottom: 100px;
+  
+  font-size: 18px;
+  color: #93a3ab;
+  text-align: center;
 }
 
 .subscribe-block__item {
   width: 72%;
   margin: 0 auto;
-  
-  font-size: 18px;
-  line-height: 24px;
-  color: #93a3ab;
-  text-align: center;
 }
 
 .subscribe-block__item .big-text {
@@ -210,7 +241,6 @@ h1, h2 {
 .links a {
   color: #93a3ab;
   font-size: 24px;
-  line-height: 32px;
   text-decoration: none;
 }
 
@@ -239,7 +269,6 @@ h1, h2 {
   
   text-align: center;
   font-size: 18px;
-  line-height: 24px;
   color: rgba(127, 146, 157, 0.3);
 }
 
@@ -256,14 +285,12 @@ h1, h2 {
 
 .btn-shop {
   font-size: 24px;
-  line-height: 30px;
   padding: 13px 25px;
 }
 
 .btn-buy, .btn-details, .btn-subscribe {
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 24px;
   font-weight: bold;
 }
 
@@ -272,11 +299,11 @@ h1, h2 {
 }
 
 .btn-details {
-  padding: 11px 14px;
+  padding: 8px 14px;
 }
 
 .btn-subscribe {
-  padding: 15px 125px;
+  padding: 17px 125px;
   border-color: #81cada;
   background-color: transparent;
 }
@@ -288,7 +315,6 @@ input[name="email"] {
   
   font-family: HKGrotesk, sans-serif;
   font-size: 24px;
-  line-height: 30px;
   color: #93a3ab;
   text-align: center;
   
