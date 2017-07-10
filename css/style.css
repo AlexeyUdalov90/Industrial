@@ -1,6 +1,5 @@
 body {
-  max-width: 1360px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   
   font-family: HKGrotesk, sans-serif;
@@ -11,7 +10,7 @@ body {
 }
 
 body * {
-  box-sizing: border-box;
+/*  box-sizing: border-box;*/
 }
 
 .header {
@@ -19,21 +18,32 @@ body * {
   margin-bottom: 50px;
 }
 
+.header-block__item {
+  margin: 20px;
+}
+
+.header-block .form-search {
+  align-self: center;
+}
+
 .form-search-btn {
-  font-size: 0;
+  font-family: HKGrotesk, sans-serif;
+  font-size: 1.5rem;
+  color: transparent;
   width: 35px;
-  height: 35px;
+  height: 38px;
   background: url(../img/search.svg) no-repeat 50% 50%;
   border: none;
   border-bottom: 3px solid #62767f;
   cursor: pointer;
+  margin-right: -5px;
 }
 
 input[id="query-search"] {
   width: 170px;
   height: 35px;
   font-family: HKGrotesk, sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #62767f;
   background-color: transparent;
   border: none;
@@ -54,13 +64,18 @@ h1, h2 {
   justify-content: space-between;
 }
 
+.block .item {
+  margin: 20px;
+}
+
 .first-block__item {
   position: relative;
   flex-basis: 100%;
-  min-height: 690px;
+  min-height: 590px;
   
   padding: 50px 60px;
-  margin-bottom: 40px;
+  
+  font-size: 2rem;
   
   background-image: url(../img/product.jpg);
   background-repeat: no-repeat;
@@ -69,13 +84,12 @@ h1, h2 {
 }
 
 .first-block__item h1 {
-  font-size: 80px;
+  font-size: 5rem;
   margin-bottom: 20px;
 }
 
 .item__large-content {
   width: 36%;
-  font-size: 32px;
 }
 
 .item__large-content p {
@@ -92,7 +106,7 @@ h1, h2 {
   right: 37px;
   
   font-family: Baloo;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 110px;
   font-weight: bold;
   
@@ -118,16 +132,19 @@ h1, h2 {
 }
 
 .second-block {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .second-block__item {
-/*  flex-grow: 1;*/
-  flex-basis: 560px;
-  min-height: 560px;
+  flex-grow: 1;
+  flex-basis: 430px;
+  min-height: 500px;
   padding: 30px;
-  margin-bottom: 40px;
-/*  margin-right: 40px;*/
+}
+
+.second-block__item h2 {
+  font-size: 3rem;
+  margin-bottom: 25px;
 }
 
 .second-block__item:first-child {
@@ -137,16 +154,10 @@ h1, h2 {
 
 .second-block__item:last-child {
   background: #757dc9 url(../img/photo_cam.png) no-repeat 130px 280px;
-  margin-right: 0;
 }
 
 .item__medium-content {
   width: 90%;
-}
-
-.item__medium-content h2 {
-  font-size: 48px;
-  margin-bottom: 25px;
 }
 
 .item__medium-content p{
@@ -161,11 +172,9 @@ h1, h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-basis: 360px;
-  min-height: 440px;
+  flex-basis: 300px;
+  min-height: 350px;
   text-align: center;
-/*  margin: 0 auto;*/
-  margin-bottom: 40px;
   padding: 60px 30px 30px;
 }
 
@@ -190,7 +199,7 @@ h1, h2 {
 }
 
 .item__small-content {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .item__small-content p {
@@ -198,7 +207,7 @@ h1, h2 {
 }
 
 .item__small-content h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   margin: 0;
   margin-bottom: 30px;
   margin-top: 15px;
@@ -219,7 +228,7 @@ h1, h2 {
 }
 
 .subscribe-block__item .big-text {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .links ul {
@@ -240,7 +249,7 @@ h1, h2 {
 
 .links a {
   color: #93a3ab;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
@@ -251,7 +260,7 @@ h1, h2 {
 .links li::after {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 12px;
   right: 15px;
   width: 6px;
   height: 6px;
@@ -268,7 +277,7 @@ h1, h2 {
   padding: 0;
   
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: rgba(127, 146, 157, 0.3);
 }
 
@@ -284,13 +293,13 @@ h1, h2 {
 }
 
 .btn-shop {
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 13px 25px;
 }
 
 .btn-buy, .btn-details, .btn-subscribe {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
@@ -314,7 +323,7 @@ input[name="email"] {
   margin-bottom: 20px;
   
   font-family: HKGrotesk, sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #93a3ab;
   text-align: center;
   
@@ -323,6 +332,79 @@ input[name="email"] {
 }
 
 .container {
-  width: 85%;
+/*  width: 85%;*/
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  
+  .block .item {
+    margin: 10px;
+  }
+  
+  .first-block__item {
+    min-height: 480px;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+  }
+  
+  .item__large-content {
+    width: 40%;
+  }
+  
+  .first-block__item h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .btn-shop {
+    font-size: 1.2rem;
+    padding: 10px 18px;
+  }
+  
+  .stiker {
+    width: 80px;
+    height: 80px;
+
+    top: 25px;
+    right: 25px;
+
+    font-size: 0.8rem;
+    line-height: 80px;
+  }
+  
+  .second-block {
+    font-size: 1.3rem;
+  }
+  
+  .second-block__item {
+    min-height: 320px;
+    padding: 20px;
+  }
+  
+  .second-block__item h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .item__medium-content {
+    width: 50%;
+  }
+  
+  .second-block__item:first-child {
+    background-position: -250px -250px;
+  }
+  
+  .second-block__item:last-child {
+    background-position: 200px 80px;
+  }
+  
+  .btn-buy, .btn-details, .btn-subscribe {
+    font-size: 1rem;
+  }
+
+  .btn-buy {
+    padding: 10px 28px;
+  }
 }
