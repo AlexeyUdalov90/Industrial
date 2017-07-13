@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .block .item {
@@ -32,7 +32,7 @@ body {
 }
 
 .header-block .logo {
-/*  flex-grow: 2;*/
+  flex-grow: 1;
 }
 
 .header-block .form-search {
@@ -211,7 +211,7 @@ h1, h2 {
 }
 
 .third-block__item .item__image {
-  width: 310px;
+  width: 300px;
   height: 220px;
 }
 
@@ -517,3 +517,126 @@ h1, h2 {
   }
 }
 
+@media (max-width: 500px) {
+  
+  .first-block__item {
+    min-height: 350px;
+    background-image: url(../img/mobile/product_m.jpg);
+  }
+  
+  .first-block__item h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .item__large-content {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .item__large-content p {
+    margin-bottom: 50px;
+  }
+  
+  .btn-shop {
+    font-size: 1rem;
+    padding: 10px 13px;
+  }
+  
+  .stiker {
+    width: 60px;
+    height: 60px;
+    
+    top: 5px;
+    right: 5px;
+    
+    font-size: 0.6rem;
+    line-height: 60px;
+  }
+  
+  .second-block__item {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .second-block__item .item__image {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .item__medium-content {
+    width: 85%;
+  }
+  
+  .item__medium-content p {
+    margin-bottom: 30px;
+  }
+  
+  .second-block__item h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .second-block__item:first-child .item__image {
+    left: 0px;
+    bottom: 0px;
+    background: url(../img/mobile/bl_speaker_m75.jpg) no-repeat -260px -125px;
+  }
+  
+  .second-block__item:last-child .item__image {
+    right: 0px;
+    bottom: 0px;
+    background: url(../img/mobile/photo_cam_m75.png) no-repeat 20px 110px;
+  }
+  
+  .third-block__item:nth-child(odd) .item__small-content {
+    padding-top: 20px;
+  }
+  
+  .third-block__item:nth-child(even) .item__small-content {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+  
+  .third-block__item .item__image {
+    height: 180px;
+  }
+  
+  .third-block__item:nth-child(1) .item__image {
+    background: url(../img/air_purifier.png) no-repeat 50% -5%;
+  }
+  
+  .third-block__item:nth-child(2) .item__image {
+    background: url(../img/headphones.jpg) no-repeat 76% 75%;
+  }
+
+  .third-block__item:nth-child(3) .item__image {
+    background: url(../img/braun_pr.png) no-repeat 50% -15%;
+  }
+  
+  .item__small-content h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe-block__form input[name="email"] {
+    width: 235px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .btn-buy, .btn-details, .btn-subscribe {
+    font-size: 0.7rem;
+  }
+  
+  .btn-buy {
+    padding: 10px 18px;
+  }
+  
+  .btn-subscribe {
+    padding: 10px 85px;
+  }
+}
