@@ -53,7 +53,7 @@ body {
 .form-search-btn {
   font-size: 1.5rem;
   color: transparent;
-/*  flex-basis: 20px;*/
+  flex-basis: 10%;
   height: 30px;
   background: url(../img/search.svg) no-repeat 50% 50%;
   border: none;
@@ -61,13 +61,14 @@ body {
 }
 
 input[id="query-search"] {
-  flex-basis: 160px;
+  flex-basis: 90%;
   height: 30px;
   font-family: HKGrotesk, sans-serif;
   font-size: 1.5rem;
   color: #62767f;
   background-color: transparent;
   border: none;
+  box-sizing: border-box;
 }
 
 h1, h2 {
