@@ -11,6 +11,7 @@ body {
 
 .block {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -25,16 +26,17 @@ body {
 }
 
 .header-block .logo {
+  flex-basis: 294px;
   flex-grow: 8;
 }
 
-.header-block .form-search {
+.header-block .form {
   align-self: center;
+  flex-basis: 15%;
   flex-grow: 1;
-/*  flex-basis: 1px;*/
 }
 
-.header-block .form-search::after {
+.header-block .form::after {
   content: "";
   display: block;
   width: 100%;
@@ -42,12 +44,19 @@ body {
   background-color: #62767f;
 }
 
+.header .form-search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .form-search-btn {
-  display: inline-block;
+/*  display: inline-block;*/
 /*  font-family: HKGrotesk, sans-serif;*/
   font-size: 1.5rem;
   color: transparent;
-  width: 10%;
+  flex-basis: 10%;
+/*  width: 10%;*/
   height: 35px;
   background: url(../img/search.svg) no-repeat 50% 50%;
   border: none;
@@ -57,8 +66,9 @@ body {
 }
 
 input[id="query-search"] {
-  display: inline-block;
-  width: 85%;
+/*  display: inline-block;*/
+  flex-basis: 90%;
+/*  width: 85%;*/
   height: 35px;
   font-family: HKGrotesk, sans-serif;
   font-size: 1.5rem;
@@ -295,6 +305,22 @@ h1, h2 {
   font-size: 2.25rem;
 }
 
+.subscribe-block__form input[name="email"] {
+  width: 360px;
+  height: 60px;
+  margin-bottom: 20px;
+  
+  font-family: HKGrotesk, sans-serif;
+  font-size: 1.5rem;
+  color: #93a3ab;
+  text-align: center;
+  
+  box-sizing: border-box;
+  border: 3px solid #63767f;
+  border-radius: 0;
+  background-color: transparent;
+}
+
 .footer .links {
   margin: 0 auto 30px;
 }
@@ -387,21 +413,6 @@ h1, h2 {
   width: 360px;
   height: 60px;
   border-color: #81cada;
-  background-color: transparent;
-}
-
-.subscribe-block__form input[name="email"] {
-  width: 352px;
-  height: 52px;
-  margin-bottom: 20px;
-  
-  font-family: HKGrotesk, sans-serif;
-  font-size: 1.5rem;
-  color: #93a3ab;
-  text-align: center;
-  
-  border: 3px solid #63767f;
-  border-radius: 0;
   background-color: transparent;
 }
 
