@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  margin-bottom: 60px;
   
   font-family: HKGrotesk, sans-serif;
   color: #fff;
@@ -11,7 +12,6 @@ body {
 
 .block {
   display: flex;
-  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -51,33 +51,23 @@ body {
 }
 
 .form-search-btn {
-/*  display: inline-block;*/
-/*  font-family: HKGrotesk, sans-serif;*/
   font-size: 1.5rem;
   color: transparent;
   flex-basis: 10%;
-/*  width: 10%;*/
-  height: 35px;
+  height: 30px;
   background: url(../img/search.svg) no-repeat 50% 50%;
   border: none;
-/*  border-bottom: 3px solid #62767f;*/
   cursor: pointer;
-/*  margin-right: -5px;*/
 }
 
 input[id="query-search"] {
-/*  display: inline-block;*/
   flex-basis: 90%;
-/*  width: 85%;*/
-  height: 35px;
+  height: 30px;
   font-family: HKGrotesk, sans-serif;
   font-size: 1.5rem;
-/*  line-height: 35px;*/
   color: #62767f;
   background-color: transparent;
   border: none;
-/*  border-radius: none;*/
-/*  border-bottom: 3px solid #62767f;*/
 }
 
 h1, h2 {
@@ -116,7 +106,6 @@ h1, h2 {
 }
 
 .stiker {
-/*  width: 9.5%;*/
   width: 110px;
   height: 110px;
   
@@ -167,7 +156,6 @@ h1, h2 {
   font-size: 3rem;
   margin: 0;
   margin-top: 30px;
-/*  margin-bottom: 25px;*/
 }
 
 .second-block__item .item__image {
@@ -211,7 +199,7 @@ h1, h2 {
 }
 
 .third-block {
-  margin-bottom: 110px;
+  margin-bottom: 150px;
   min-height: 440px;
 }
 
@@ -221,7 +209,6 @@ h1, h2 {
   flex-wrap: wrap;
   justify-content: center;
   flex-grow: 1;
-/*  align-items: center;*/
   flex-basis: 320px;
   text-align: center;
 }
@@ -288,7 +275,6 @@ h1, h2 {
 }
 
 .subscribe-block {
-  width: 100%;
   margin-bottom: 100px;
   
   font-size: 1.125rem;
@@ -297,12 +283,16 @@ h1, h2 {
 }
 
 .subscribe-block__item {
-  width: 72%;
+  width: 67%;
   margin: 0 auto;
 }
 
 .subscribe-block__item .big-text {
   font-size: 2.25rem;
+}
+
+.subscribe-block__item p:last-of-type {
+  margin-bottom: 50px;
 }
 
 .subscribe-block__form input[name="email"] {
@@ -444,6 +434,10 @@ h1, h2 {
 
 @media (max-width: 760px) {
   
+  body {
+    margin-bottom: 40px;
+  }
+  
   .first-block__item {
     min-height: 480px;
     padding: 20px 30px;
@@ -519,9 +513,13 @@ h1, h2 {
     font-size: 1.8rem;
   }
   
+  .subscribe-block__item p:last-of-type {
+    margin-bottom: 30px;
+  }
+  
   .subscribe-block__form input[name="email"] {
-    width: 332px;
-    height: 42px;
+    width: 340px;
+    height: 50px;
     
     font-size: 1.3rem;
   }
@@ -541,6 +539,10 @@ h1, h2 {
 }
 
 @media (max-width: 500px) {
+  
+  body {
+    margin-bottom: 20px;
+  }
   
   .first-block__item {
     min-height: 350px;
@@ -613,6 +615,10 @@ h1, h2 {
     background: url(../img/mobile/photo_cam_m75.png) no-repeat 20px 110px;
   }
   
+  .third-block {
+    margin-bottom: 30px;
+  }
+  
   .third-block__item:nth-child(odd) .item__small-content {
     padding-top: 20px;
   }
@@ -648,9 +654,13 @@ h1, h2 {
     margin-bottom: 50px;
   }
   
+  .subscribe-block__item p:last-of-type {
+    margin-bottom: 20px;
+  }
+  
   .subscribe-block__form input[name="email"] {
-    width: 232px;
-    height: 32px;
+    width: 240px;
+    height: 40px;
     margin-bottom: 10px;
     font-size: 1rem;
   }
