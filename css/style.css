@@ -32,7 +32,7 @@ body {
 
 .header-block .form {
   align-self: center;
-
+/*  width: 100%;*/
   flex-grow: 1;
 }
 
@@ -48,6 +48,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 .form-search-btn {
