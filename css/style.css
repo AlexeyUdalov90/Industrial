@@ -32,7 +32,6 @@ body {
 
 .header-block .form {
   align-self: center;
-/*  width: 100%;*/
   flex-grow: 1;
 }
 
@@ -48,15 +47,13 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-/*  width: 100%;*/
 }
 
 .form-search-btn {
   font-size: 1.5rem;
   color: transparent;
-  flex-basis: 30px;
+  width: 30px;
   flex-grow: 0;
-/*  flex-basis: 10%;*/
   height: 30px;
   background: url(../img/search.svg) no-repeat 50% 50%;
   border: none;
@@ -64,8 +61,8 @@ body {
 }
 
 input[id="query-search"] {
-  flex-basis: 100px;
-  flex-grow: 1;
+  width: 100%;
+/*  flex-grow: 1;*/
   height: 30px;
   font-family: HKGrotesk, sans-serif;
   font-size: 1.5rem;
