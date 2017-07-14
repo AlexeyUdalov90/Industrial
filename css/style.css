@@ -32,7 +32,7 @@ body {
 
 .header-block .form {
   align-self: center;
-  flex-basis: 180px;
+  width: 180px;
   flex-grow: 1;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 input[id="query-search"] {
-/*  flex-basis: 90%;*/
+  flex-basis: 100px;
   flex-grow: 1;
   height: 30px;
   font-family: HKGrotesk, sans-serif;
