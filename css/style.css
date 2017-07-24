@@ -14,7 +14,6 @@
 body {
   margin: 0;
   padding: 0;
-/*  margin-bottom: 60px;*/
   
   font-family: HKGrotesk, sans-serif;
   color: #fff;
@@ -45,18 +44,9 @@ body {
 .header-block .form {
   align-self: center;
   flex-grow: 1;
+  padding-bottom: 2px;
   border-bottom: 3px solid #62767f;
 }
-
-/*
-.header-block .form::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #62767f;
-}
-*/
 
 .header .form-search {
   display: flex;
@@ -68,7 +58,6 @@ body {
   font-size: 1.5rem;
   color: transparent;
   width: 30px;
-  flex-grow: 0;
   height: 30px;
   background: url(../img/search.svg) no-repeat 50% 50%;
   border: none;
@@ -77,7 +66,6 @@ body {
 
 input[id="query-search"] {
   width: 100%;
-/*  flex-grow: 1;*/
   height: 30px;
   font-family: HKGrotesk, sans-serif;
   font-size: 1.5rem;
@@ -87,11 +75,19 @@ input[id="query-search"] {
   box-sizing: border-box;
 }
 
+input[id="query-search"]:focus {
+  outline-color: #212c44;
+}
+
 h1, h2 {
   font-family: 'League Spartan', Arial, sans-serif;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
+}
+
+.item .short-text {
+  display: inline-block;
 }
 
 .first-block__item {
@@ -118,7 +114,7 @@ h1, h2 {
   width: 36%;
 }
 
-.item__large-content p {
+.item__large-content .short-text {
   margin-bottom: 120px;
 }
 
@@ -134,6 +130,9 @@ h1, h2 {
   font-size: 1rem;
   line-height: 110px;
   font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
   
   background-image: url(../img/stiker.svg);
   background-repeat: no-repeat;
@@ -141,18 +140,11 @@ h1, h2 {
   background-position: 50% 50%;
 }
 
-.stiker p {
-  padding: 0;
-  margin: 0;
-  
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
+.stiker .short-text {
   transform: rotate(-15deg);
 }
 
-.stiker span {
+.stiker .color {
   color: #2bde73;
 }
 
@@ -182,17 +174,13 @@ h1, h2 {
 }
 
 .second-block__item:first-child {
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
   background-color: #5eb7a5;
 }
 
 .second-block__item:first-child .item__image {
   left: -80px;
-  bottom: -30px;
+  bottom: -15px;
   z-index: 1;
-  background: url(../img/bl_speaker.jpg) no-repeat -200px -285px;
 }
 
 .second-block__item:last-child {
@@ -200,19 +188,23 @@ h1, h2 {
 }
 
 .second-block__item:last-child .item__image {
-  right: -59px;
-  bottom: -42px;
+  right: -75px;
+  bottom: -70px;
   z-index: 1;
-  background: url(../img/photo_cam.png) no-repeat 13px 28px;
 }
 
 .item__medium-content {
   position: relative; 
   z-index: 2;
-  width: 80%;
+  width: 90%;
 }
 
-.item__medium-content p{
+.second-block__item:first-child .item__medium-content {
+  text-align: right;
+  margin-left: auto;
+}
+
+.item__medium-content .short-text{
   margin-top: 10px;
   margin-bottom: 60px;
 }
@@ -233,8 +225,14 @@ h1, h2 {
 }
 
 .third-block__item .item__image {
+  position: relative; 
   width: 300px;
   height: 220px;
+  overflow: hidden;
+}
+
+.third-block__item .image {
+  position: absolute;
 }
 
 .item__small-content {
@@ -242,7 +240,7 @@ h1, h2 {
   font-size: 1rem;
 }
 
-.item__small-content p {
+.item__small-content .short-text {
   margin: 0;
 }
 
@@ -257,24 +255,24 @@ h1, h2 {
   background-color: #eb7c61;
 }
 
-.third-block__item:nth-child(1) .item__image {
-  background: url(../img/air_purifier.png) no-repeat 50% -10%;
+.third-block__item:nth-child(1) .image {
+  top: 35px;
 }
 
 .third-block__item:nth-child(2) {
   background-color: #537582;
 }
 
-.third-block__item:nth-child(2) .item__image {
-  background: url(../img/headphones.jpg) no-repeat 76% 62%;
+.third-block__item:nth-child(2) .image {
+  top: -85px;
 }
 
 .third-block__item:nth-child(3) {
   background-color: #81cada;
 }
 
-.third-block__item:nth-child(3) .item__image {
-  background: url(../img/braun_pr.png) no-repeat 50% -35%;
+.third-block__item:nth-child(3) .image {
+  top: 35px;
 }
 
 .third-block__item:nth-child(odd) .item__small-content {
@@ -595,11 +593,11 @@ h1, h2 {
   }
 
   .item__large-content {
-    width: 100%;
+    width: 80%;
     font-size: 1.2rem;
   }
 
-  .item__large-content p {
+  .item__large-content .short-text {
     margin-bottom: 50px;
   }
   
@@ -632,7 +630,7 @@ h1, h2 {
     width: 85%;
   }
   
-  .item__medium-content p {
+  .item__medium-content .short-text {
     margin-bottom: 30px;
   }
   
@@ -642,16 +640,22 @@ h1, h2 {
     margin-top: 10px;
   }
   
+  .second-block__item:first-child img {
+    width: 380px;
+  }
+  
   .second-block__item:first-child .item__image {
-    left: 0px;
-    bottom: 0px;
-    background: url(../img/mobile/bl_speaker_m75.jpg) no-repeat -260px -125px;
+    left: -80px;
+    bottom: -50px;
+  }
+  
+  .second-block__item:last-child img {
+    width: 480px;
   }
   
   .second-block__item:last-child .item__image {
-    right: 0px;
-    bottom: 0px;
-    background: url(../img/mobile/photo_cam_m75.png) no-repeat 20px 110px;
+    right: 0;
+    bottom: -85px;
   }
   
   .third-block {
@@ -671,16 +675,16 @@ h1, h2 {
     height: 180px;
   }
   
-  .third-block__item:nth-child(1) .item__image {
-    background: url(../img/air_purifier.png) no-repeat 50% -5%;
+  .third-block__item:nth-child(1) .image {
+    top: 20px;
   }
   
-  .third-block__item:nth-child(2) .item__image {
-    background: url(../img/headphones.jpg) no-repeat 76% 75%;
+  .third-block__item:nth-child(2) .image {
+    top: -125px;
   }
 
-  .third-block__item:nth-child(3) .item__image {
-    background: url(../img/braun_pr.png) no-repeat 50% -15%;
+  .third-block__item:nth-child(3) .image {
+    top: 20px;
   }
   
   .item__small-content h2 {
