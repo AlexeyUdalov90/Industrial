@@ -16,6 +16,7 @@ body {
   padding: 0;
   
   font-family: HKGrotesk, sans-serif;
+  font-size: 16px;
   color: #fff;
   line-height: 1.2;
   
@@ -55,7 +56,7 @@ body {
 }
 
 .form-search-btn {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: transparent;
   width: 30px;
   height: 30px;
@@ -68,7 +69,7 @@ input[id="query-search"] {
   width: 100%;
   height: 30px;
   font-family: HKGrotesk, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: #62767f;
   background-color: transparent;
   border: none;
@@ -90,6 +91,10 @@ h1, h2 {
   display: inline-block;
 }
 
+.first-block {
+  font-size: 32px;
+}
+
 .first-block__item {
   position: relative;
   flex-basis: 100%;
@@ -97,7 +102,7 @@ h1, h2 {
   
   padding: 50px 60px;
   
-  font-size: 2rem;
+  font-size: 1em;
   
   background-image: url(../img/product.jpg);
   background-repeat: no-repeat;
@@ -106,7 +111,7 @@ h1, h2 {
 }
 
 .first-block__item h1 {
-  font-size: 5rem;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
@@ -127,7 +132,7 @@ h1, h2 {
   right: 37px;
   
   font-family: Baloo;
-  font-size: 1rem;
+  font-size: 0.5em;
   line-height: 110px;
   font-weight: bold;
   color: #fff;
@@ -149,7 +154,7 @@ h1, h2 {
 }
 
 .second-block {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .second-block__item {
@@ -162,7 +167,7 @@ h1, h2 {
 }
 
 .second-block__item h2 {
-  font-size: 3rem;
+  font-size: 2em;
   margin: 0;
   margin-top: 30px;
 }
@@ -178,8 +183,8 @@ h1, h2 {
 }
 
 .second-block__item:first-child .item__image {
-  left: -80px;
-  bottom: -15px;
+  left: -85px;
+  bottom: -10px;
   z-index: 1;
 }
 
@@ -188,7 +193,7 @@ h1, h2 {
 }
 
 .second-block__item:last-child .item__image {
-  right: -75px;
+  right: -70px;
   bottom: -70px;
   z-index: 1;
 }
@@ -210,8 +215,8 @@ h1, h2 {
 }
 
 .third-block {
+  font-size: 16px;
   margin-bottom: 150px;
-  min-height: 440px;
 }
 
 .third-block__item {
@@ -235,9 +240,14 @@ h1, h2 {
   position: absolute;
 }
 
+.third-block img {
+  width: 100%;
+  height: auto;
+}
+
 .item__small-content {
   width: 275px;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .item__small-content .short-text {
@@ -245,7 +255,7 @@ h1, h2 {
 }
 
 .item__small-content h2 {
-  font-size: 2.25rem;
+  font-size: 2.25em;
   margin: 0;
   margin-bottom: 30px;
   margin-top: 15px;
@@ -264,6 +274,8 @@ h1, h2 {
 }
 
 .third-block__item:nth-child(2) .image {
+  left: 0;
+  right: 0;
   top: -85px;
 }
 
@@ -294,7 +306,7 @@ h1, h2 {
 .subscribe-block {
   margin-bottom: 100px;
   
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #93a3ab;
   text-align: center;
 }
@@ -305,7 +317,7 @@ h1, h2 {
 }
 
 .subscribe-block__item .big-text {
-  font-size: 2.25rem;
+  font-size: 1.8em;
 }
 
 .subscribe-block__item p:last-of-type {
@@ -324,7 +336,7 @@ h1, h2 {
   margin-bottom: 20px;
   
   font-family: HKGrotesk, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.33em;
   color: #93a3ab;
   text-align: center;
   
@@ -334,8 +346,13 @@ h1, h2 {
   background-color: transparent;
 }
 
+.subscribe-form input[name="email"]:focus {
+  outline-color: inherit;
+}
+
 .footer {
   padding-bottom: 50px;
+  font-size: 18px;
 }
 
 .footer .links {
@@ -360,7 +377,7 @@ h1, h2 {
 
 .footer .links a {
   color: #93a3ab;
-  font-size: 1.5rem;
+  font-size: 1.33em;
   text-decoration: none;
 }
 
@@ -392,7 +409,7 @@ h1, h2 {
   padding: 0;
   
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 0.9em;
   color: rgba(127, 146, 157, 0.3);
 }
 
@@ -400,6 +417,7 @@ h1, h2 {
   display: inline-block;
   text-decoration: none;
   color: #fff;
+  font-size: 0.75em;
   border: 3px solid #f0caa1;
 }
 
@@ -408,13 +426,11 @@ h1, h2 {
 }
 
 .btn-shop {
-  font-size: 1.5rem;
   padding: 13px 25px;
 }
 
 .btn-buy, .btn-details, .btn-subscribe {
   text-transform: uppercase;
-  font-size: 18px;
   font-weight: bold;
 }
 
@@ -423,16 +439,18 @@ h1, h2 {
 }
 
 .btn-details {
+  font-size: 1.125em;
   padding: 8px 14px;
 }
 
 .btn-subscribe {
   width: 360px;
   height: 60px;
+  font-size: 1em;
 /*
   letter-spacing: 0.8px;
   line-height: 20px;
-  padding: 17px 120px;
+  padding: 17px 120.5px;
 */
   border-color: #81cada;
   background-color: transparent;
@@ -464,16 +482,19 @@ h1, h2 {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   
   body {
     margin-bottom: 40px;
   }
   
+  .first-block {
+    font-size: 24px;
+  }
+  
   .first-block__item {
     min-height: 480px;
     padding: 20px;
-    font-size: 1.5rem;
   }
   
   .item__large-content {
@@ -481,13 +502,11 @@ h1, h2 {
   }
   
   .first-block__item h1 {
-    font-size: 4rem;
     margin-top: 20px;
     margin-bottom: 10px;
   }
   
   .btn-shop {
-    font-size: 1.2rem;
     padding: 10px 18px;
   }
   
@@ -498,12 +517,11 @@ h1, h2 {
     top: 25px;
     right: 25px;
 
-    font-size: 0.8rem;
     line-height: 80px;
   }
   
   .second-block {
-    font-size: 1.3rem;
+    font-size: 20px;
   }
   
   .second-block__item {
@@ -512,17 +530,12 @@ h1, h2 {
   }
   
   .second-block__item h2 {
-    font-size: 2.5rem;
     margin-top: 15px;
     margin-bottom: 15px;
   }
   
   .item__medium-content {
     width: 60%;
-  }
-  
-  .btn-buy, .btn-details, .btn-subscribe {
-    font-size: 1rem;
   }
 
   .btn-buy {
@@ -535,16 +548,11 @@ h1, h2 {
   
   .subscribe-block {
     margin-bottom: 70px;
-  
-    font-size: 1rem;
+    font-size: 16px;
   }
   
   .subscribe-block__item {
     width: 85%;
-  }
-  
-  .subscribe-block__item .big-text {
-    font-size: 1.8rem;
   }
   
   .subscribe-block__item p:last-of-type {
@@ -554,8 +562,6 @@ h1, h2 {
   .subscribe-form input[name="email"] {
     width: 340px;
     height: 50px;
-    
-    font-size: 1.3rem;
   }
   
   .btn-subscribe {
@@ -564,11 +570,8 @@ h1, h2 {
   }
   
   .footer {
+    font-size: 16px;
     padding-bottom: 20px;
-  }
-  
-  .footer .links a {
-    font-size: 1.3rem;
   }
   
   .footer .links li::after {
@@ -582,19 +585,21 @@ h1, h2 {
     margin-bottom: 20px;
   }
   
+  .first-block {
+    font-size: 18px;
+  }
+  
   .first-block__item {
     min-height: 350px;
     background-image: url(../img/mobile/product_m.jpg);
   }
   
   .first-block__item h1 {
-    font-size: 3rem;
     margin-bottom: 10px;
   }
 
   .item__large-content {
     width: 80%;
-    font-size: 1.2rem;
   }
 
   .item__large-content .short-text {
@@ -602,7 +607,6 @@ h1, h2 {
   }
   
   .btn-shop {
-    font-size: 1rem;
     padding: 10px 13px;
   }
   
@@ -613,12 +617,11 @@ h1, h2 {
     top: 5px;
     right: 5px;
     
-    font-size: 0.5rem;
     line-height: 60px;
   }
   
   .second-block__item {
-    font-size: 1rem;
+    font-size: 16px;
   }
   
   .second-block__item .item__image {
@@ -635,18 +638,18 @@ h1, h2 {
   }
   
   .second-block__item h2 {
-    font-size: 2rem;
     margin-bottom: 10px;
     margin-top: 10px;
   }
   
   .second-block__item:first-child img {
     width: 380px;
+    height: auto;
   }
   
   .second-block__item:first-child .item__image {
-    left: -80px;
-    bottom: -50px;
+    left: -110px;
+    bottom: -70px;
   }
   
   .second-block__item:last-child img {
@@ -654,12 +657,13 @@ h1, h2 {
   }
   
   .second-block__item:last-child .item__image {
-    right: 0;
+    right: -20px;
     bottom: -85px;
   }
   
   .third-block {
     margin-bottom: 30px;
+    font-size: 14px;
   }
   
   .third-block__item:nth-child(odd) .item__small-content {
@@ -688,13 +692,13 @@ h1, h2 {
   }
   
   .item__small-content h2 {
-    font-size: 2rem;
     margin-top: 10px;
     margin-bottom: 15px;
   }
   
   .subscribe-block {
     margin-bottom: 50px;
+    font-size: 14px;
   }
   
   .subscribe-block__item p:last-of-type {
@@ -705,7 +709,6 @@ h1, h2 {
     width: 240px;
     height: 40px;
     margin-bottom: 10px;
-    font-size: 1rem;
   }
   
   .btn-subscribe {
@@ -713,15 +716,16 @@ h1, h2 {
     height: 40px;
   }
   
-  .btn-buy, .btn-details, .btn-subscribe {
-    font-size: 0.7rem;
-  }
-  
   .btn-buy {
     padding: 10px 18px;
   }
   
+  .btn-details {
+    font-size: 0.75em;
+  }
+  
   .footer {
+    font-size: 12px;
     padding-bottom: 10px;
   }
   
@@ -730,21 +734,13 @@ h1, h2 {
   }
   
   .footer .links li {
-    padding-right: 25px;
-  }
-  
-  .footer .links a {
-    font-size: 1rem;
+    padding-right: 20px;
   }
   
   .footer .links li::after {
-    top: 7px;
-    right: 9px;
+    top: 8px;
+    right: 7px;
     width: 4px;
     height: 4px;
-  }
-  
-  .footer .copyright {
-    font-size: 0.8rem;
   }
 }
