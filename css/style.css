@@ -33,13 +33,19 @@ body {
   margin: 20px;
 }
 
-.header {
-  margin-top: 60px;
-  margin-bottom: 50px;
+.header-block {
+  margin: 20px 0;
 }
 
 .header-block .logo {
+  display: flex;
+  align-content: flex-start;
   flex-grow: 8;
+}
+
+.header-block img {
+  width: auto;
+  height: 100%;
 }
 
 .header-block .form {
@@ -51,21 +57,20 @@ body {
 
 .header .form-search {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
 }
 
 .form-search-btn {
-  font-size: 1.5em;
+  font-size: 0;
   color: transparent;
   width: 30px;
-  height: 30px;
+  height: 28px;
   background: url(../img/search.svg) no-repeat 50% 50%;
   border: none;
   cursor: pointer;
 }
 
-input[id="query-search"] {
+.form-search input[id="query-search"] {
   width: 100%;
   height: 30px;
   font-family: HKGrotesk, sans-serif;
@@ -76,7 +81,12 @@ input[id="query-search"] {
   box-sizing: border-box;
 }
 
-input[id="query-search"]:focus {
+.form-search input[id="query-search"]::placeholder {
+  color: #62767f;
+}
+
+.form-search input[id="query-search"]:focus,
+.form-search-btn:active {
   outline-color: #212c44;
 }
 
@@ -127,13 +137,13 @@ h1, h2 {
   width: 110px;
   height: 110px;
   
+  display: flex;
   position: absolute;
   top: 37px;
   right: 37px;
   
   font-family: Baloo;
   font-size: 0.5em;
-  line-height: 110px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -146,6 +156,7 @@ h1, h2 {
 }
 
 .stiker .short-text {
+  margin: auto auto;
   transform: rotate(-15deg);
 }
 
@@ -346,8 +357,12 @@ h1, h2 {
   background-color: transparent;
 }
 
+.subscribe-form input[name="email"]::placeholder {
+  color: #93a3ab;
+}
+
 .subscribe-form input[name="email"]:focus {
-  outline-color: inherit;
+  outline-color: #63767f;
 }
 
 .footer {
@@ -426,7 +441,7 @@ h1, h2 {
 }
 
 .btn-shop {
-  padding: 13px 25px;
+  padding: 13px 25px; 
 }
 
 .btn-buy, .btn-details, .btn-subscribe {
@@ -444,9 +459,14 @@ h1, h2 {
 }
 
 .btn-subscribe {
+/*
   width: 360px;
   height: 60px;
+*/
   font-size: 1em;
+  line-height: 1em;
+/*  padding: 0;*/
+  padding: 1em 6.9em;
 /*
   letter-spacing: 0.8px;
   line-height: 20px;
@@ -516,8 +536,6 @@ h1, h2 {
 
     top: 25px;
     right: 25px;
-
-    line-height: 80px;
   }
   
   .second-block {
@@ -560,13 +578,8 @@ h1, h2 {
   }
   
   .subscribe-form input[name="email"] {
-    width: 340px;
-    height: 50px;
-  }
-  
-  .btn-subscribe {
-    width: 340px;
-    height: 50px;
+    width: 320px;
+    height: 55px;
   }
   
   .footer {
@@ -583,6 +596,16 @@ h1, h2 {
   
   body {
     margin-bottom: 20px;
+  }
+  
+  .header-block {
+    margin: 5px 0 0; 
+  }
+  
+  .header-block img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
   }
   
   .first-block {
@@ -616,8 +639,6 @@ h1, h2 {
     
     top: 5px;
     right: 5px;
-    
-    line-height: 60px;
   }
   
   .second-block__item {
@@ -712,8 +733,7 @@ h1, h2 {
   }
   
   .btn-subscribe {
-    width: 240px;
-    height: 40px;
+    padding: 0.7em 5.4em;
   }
   
   .btn-buy {
